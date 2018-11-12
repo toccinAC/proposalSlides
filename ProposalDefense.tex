@@ -1,0 +1,66 @@
+\documentclass{beamer}
+\usetheme[hideothersubsections]{Berkeley}
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+\usetikzlibrary{positioning}
+\usepackage[export]{adjustbox}
+\makeatletter
+\setbeamertemplate{sidebar \beamer@sidebarside}%{sidebar theme}
+  {
+    \beamer@tempdim=\beamer@sidebarwidth%
+    \advance\beamer@tempdim by -6pt%
+    \insertverticalnavigation{\beamer@sidebarwidth}%
+    \vfill
+    \ifx\beamer@sidebarside\beamer@lefttext%
+    \else%
+      \usebeamercolor{normal text}%
+      \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+      \vskip2pt%
+    \fi%
+  }%
+\makeatother
+
+
+\title{Automatic Detection of Pseudo-Tested Methods in a Test Suite Using Fault Injection}
+\author{Nicholas Tocci}
+\date{\today}
+
+\begin{document}
+%%%%%%%%%%%% Introduction %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\begin{frame}
+	\frametitle{Introduction}
+	\titlepage
+\end{frame}
+%%%%%%%%%%%% Problem %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problem}
+\label{sec:problem}
+\input{sections/problem}
+
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Solution}
+	\begin{enumerate}
+		\item{Automatic changes to code}
+		\item{Use of different styleguides}
+		\item{Easy configuration}
+	\end{enumerate}
+\end{frame}
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Issues found in research}
+	\begin{itemize}
+		\item{Not as easy to configure as I would like}
+		\item{Have to do human testing}
+		\item{Much of the work is going to be converting rules to code}
+	\end{itemize}
+\end{frame}
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+	\frametitle{Questions}
+	\begin{center}
+		\huge{Questions?}
+	\end{center}
+\end{frame}
+
+\end{document}
