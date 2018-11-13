@@ -9,53 +9,43 @@
 \end{frame}
 
 % Beginning of Current Metrics
-\subsection{Current Metrics}
+\subsection{Coverage}
 %%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-	\frametitle{Current Metrics}
-		\huge{Passing Tests}\hfill\includegraphics[scale = 0.25]{images/check.png}
+	\frametitle{Coverage}
+		\begin{center}
+			\huge{Coverage}
 
-		\huge{High Coverage}\hfill\includegraphics[scale = 0.23]{images/percent.png}
+			\includegraphics[scale = 0.25]{images/percent.png}
 
-		\huge{Test Suite Proofs}\hfill\includegraphics[scale = 0.25]{images/eye.png}
+			\textbf{\textit{Def}}: \% of a system that has been tested.
+		\end{center}
+
+
+
+
 \end{frame}
 
-\subsubsection{Passing Test Cases}
+\subsubsection{Calculation}
 %
 % This sections will explain why Passing Test Cases do not indicate a good Test Suite.
 %
 \begin{frame}
-	\frametitle{Passing Test Cases}
+	\frametitle{Calculation}
 	\begin{center}
-		\includegraphics[scale = .35]{images/passingEquals.png}
-	\end{center}
-	\begin{center}
-		What if they were written incorrectly?
+		\begin{equation*}
+			Coverage = \frac{Number of Tested Methods}{Total Number of Methods}
+		\end{equation*}
 	\end{center}
 \end{frame}
 
-\subsubsection{High Coverage}
+\subsubsection{Coverage vs Adequate Coverage}
 %
 % This sections will explain why High Coverage can mislead a developer.
 %
 \begin{frame}
 	\frametitle{High Coverage}
-		\huge{Passing Tests}\hfill\includegraphics[scale = 0.25]{images/check.png}
-
-		\huge{High Coverage}\hfill\includegraphics[scale = 0.23]{images/percent.png}
-
-		\huge{Test Suite Proofs}\hfill\includegraphics[scale = 0.25]{images/eye.png}
-\end{frame}
-
-\subsubsection{Test Suite Proofs}
-%
-% This sections will explain why Test Suite Proofs take too long to be useful.
-%
-\begin{frame}
-	\frametitle{Problem}
-		\huge{Passing Tests}\hfill\includegraphics[scale = 0.25]{images/check.png}
-
-		\huge{High Coverage}\hfill\includegraphics[scale = 0.23]{images/percent.png}
-
-		\huge{Test Suite Proofs}\hfill\includegraphics[scale = 0.25]{images/eye.png}
+		\begin{center}
+			\includegraphics[scale = .15]{images/percentEquals}
+		\end{center}
 \end{frame}
