@@ -1,0 +1,9 @@
+not mutation testing because of code as opposed to input
+high coverage does not imply high fault detection effectiveness
+test and code podcast - ep 51
+  - feature testing
+not obvious why
+what I am doing vs mutation vs fuzz vs fault injection vs chaos testing
+extreme transformation
+hypothesis for python values hypothesis.works
+tada, speed-surprises
