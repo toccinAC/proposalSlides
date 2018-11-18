@@ -31,21 +31,21 @@
     \end{center}
 \end{frame}
 
-% \begin{frame}
-% \begin{figure}[t!]
-% \begin{lstlisting}[language = Python, numbers = left, frame = single, caption = Example of a pseudo-tested method]
-% numbers.py:
-%   def numberOrder(n):
-%     numbersSorted = sorted(n)
-%     return numbersSorted
-%
-%
-% test_numbers.py:
-%   def test_numbers_ordered():
-%     numbers = {1,3,2,4}
-%     sortedNumbers = {1,2,3,4}
-%     orderedNumbers = numberOrder(numbers)
-%     assert numbers == sortedNumbers
-% \end{lstlisting}
-% \end{figure}
-% \end{frame}
+\begin{frame}[fragile]
+\frametitle{Example of a Pseudo-tested method}
+	\begin{figure}[t!, scale = .75]
+	\begin{lstlisting}[language = Python, basicstyle=\small, backgroundcolor = \color{lightgray}]
+numbers.py:
+def numberOrder(n):
+  numbersSorted = sorted(n)
+  return numbersSorted
+
+
+test_numbers.py:
+def test_numbers_ordered():
+  sortedNumbers = {1,2,3,4}
+  orderedNumbers = numberOrder(numbers)
+  assert numbers == sortedNumbers
+	\end{lstlisting}
+	\end{figure}
+\end{frame}

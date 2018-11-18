@@ -1,0 +1,16 @@
+\frametitle{Example of a Pseudo-tested method}
+	\begin{figure}[t!, scale = .75]
+	\begin{lstlisting}[language = Python, basicstyle=\small, backgroundcolor = \color{lightgray}]
+numbers.py:
+def numberOrder(n):
+  numbersSorted = sorted(n)
+  return numbersSorted
+
+
+test_numbers.py:
+def test_numbers_ordered():
+  sortedNumbers = {1,2,3,4}
+  orderedNumbers = numberOrder(numbers)
+  assert numbers == sortedNumbers
+	\end{lstlisting}
+	\end{figure}
