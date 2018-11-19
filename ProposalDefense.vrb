@@ -1,17 +1,16 @@
-\frametitle{Example of a Pseudo-tested method}
-	\begin{figure}[t!, scale = .75]
+\frametitle{Decorator Function}
+  \begin{figure}[t!, scale = .75]
 	\begin{lstlisting}[language = Python, basicstyle=\small, backgroundcolor = \color{lightgray}]
-numbers.py:
-def numberOrder(n):
-  numbersSorted = sorted(n)
-  return numbersSorted
+  def skipper(func):
+    if(func.__name__ in functionsComplete):
+      def doFunc(*args, **kwargs):
+        return 5
+      return doFunc
 
-
-test_numbers.py:
-def test_numbers_ordered():
-  numbers = {2,4,3,1}
-  sortedNumbers = {1,2,3,4}
-  orderedNumbers = numberOrder(numbers)
-  assert numbers == sortedNumbers
-	\end{lstlisting}
-	\end{figure}
+    else:
+      def doFunc(*args, **kwargs):
+        var = func(*args, **kwargs)
+          return var
+      return doFunc
+  \end{lstlisting}
+\end{figure}
