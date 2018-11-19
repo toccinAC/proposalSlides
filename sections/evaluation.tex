@@ -1,24 +1,103 @@
+\subsection{Coverage Calculation}
+\begin{frame}
+\frametitle{Coverage Calculation}
+\begin{center}
+  \begin{equation*}
+    Coverage = \frac{Number of Tested Methods}{Total Number of Methods}
+  \end{equation*}
+\end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Coverage Example}
+  \begin{center}
+
+  \begin{table}[htbp]
+  %   \centering
+   \resizebox{6.5cm}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+  %
+      \bf NUMM     & \bf NUMTM & \bf Coverage \\ \hline\hline
+      40  & 25  & 62.5\%  \\ \hline
+  %
+  %
+    \end{tabular}%
+    }
+
+  \end{table}
+
+  \end{center}
+\end{frame}
+
+\subsection{Truly-Tested-Method Calculation}
+\begin{frame}
+  \frametitle{Truly-Tested-Method Calculation}
+  \begin{itemize}
+    \item \textbf{Number of Truly-Tested-Methods = NUMTTM}
+
+    \item \textbf{Number of Tested Methods = NUMTM}
+
+    \item \textbf{Number of Pseudo-tested Methods = NUMPTM}
+  \end{itemize}
+
+  \begin{center}
+    \begin{equation*}
+      NUMTTM = NUMTM - NUMPTM
+    \end{equation*}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Truly-Tested-Method Example}
+  \begin{center}
+
+  \begin{table}[htbp]
+  %   \centering
+   \resizebox{6.5cm}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+  %
+      \bf NUMTM     & \bf NUMPTM & \bf NUMTTM \\ \hline\hline
+      25  & 3  & 22  \\ \hline
+  %
+  %
+    \end{tabular}%
+    }
+
+  \end{table}
+
+  \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Adequate-Coverage Calculation}
+\begin{center}
+  \begin{equation*}
+    AC = \frac{Number of TrulyTested Methods}{Total Number of Methods}
+  \end{equation*}
+\end{center}
+\end{frame}
+
 \subsection{Metrics Produced}
 \begin{frame}
   \frametitle{Output}
     \begin{center}
+
     \begin{table}[htbp]
       \centering
-      \begin{tabular}{|c||c|c|c|c|}
+    \resizebox{9.5cm}{!}{%
+      \begin{tabular}{|c|c|c|c|c|c|}
         \hline
 
-        \bf Task     & \bf Begin Date & \bf End Date & \bf Backup Begin Date & \bf Backup End Date\\ \hline\hline
-        Implementation  & Now            & 15 Jan  & Now & 1 Feb   \\ \hline
-        Testing & 15 Jan        & 1 Feb   & 1 Feb & 10 Mar  \\ \hline
-        Analysis  & 1 Feb        & 10 Mar  & 10 Mar &  25 Mar     \\ \hline
-        First draft & 10 Mar          & 25 Mar  & 25 Mar &  5 Apr   \\ \hline
-        Second draft  & 25 Mar         & 5 Apr  & 5 Apr &  15 Apr   \\ \hline
-        Third draft  & 5 Apr         & 15 Apr  & 15 Apr &  20 Apr   \\ \hline
-        Fourth draft  & 15 Apr         & 20 Apr  & 20 Apr &  Apr 25   \\ \hline
-        Fifth draft  & 20 Apr         & 25 Apr  & Apr 25 & 27 Apr     \\ \hline
+        \bf NUMM     & \bf NUMTM & \bf Coverage & \bf NUMPTM & \bf NUMTTM & \bf AC\\ \hline\hline
+        40  & 25  & 62.5\%  & 3 & 22 &  55\%  \\ \hline
 
-      \end{tabular}
-      \caption{Proposed Research Schedule}~\label{intro-tab1}
+
+      \end{tabular}%
+      }
+
     \end{table}
+
     \end{center}
 \end{frame}

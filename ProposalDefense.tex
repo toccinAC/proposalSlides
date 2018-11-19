@@ -4,8 +4,9 @@
 \usetikzlibrary{fadings}
 \usetikzlibrary{positioning}
 \usepackage{listings}
-
+\usepackage{array}
 \usepackage[export]{adjustbox}
+\newcolumntype{L}{>{\centering\arraybackslash}m{3cm}}
 \makeatletter
 \setbeamertemplate{sidebar \beamer@sidebarside}%{sidebar theme}
   {
@@ -51,4 +52,7 @@
 \label{sec:Evaluation Strategy}
 \input{sections/evaluation}
 
+\section{Conclusion}
+\label{sec:Conclusion}
+\input{sections/conclusion}
 \end{document}
